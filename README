@@ -1,0 +1,13 @@
+For http://optional.is/contest/ the winners are selected based on being closest to a random point on the globe. The equation used to compute the distance is the Haversine formula.
+
+http://en.wikipedia.org/wiki/Haversine_formula
+
+In full disclosure, the code used to compute the distance has been open sourced.
+
+To use this in your own projects, you simply include the file
+include('haversine.php');
+
+And pass it a pair of lat/lons
+$distance = haversine($lat1,$lon1,$lat2,$lon2);
+
+The distance in kilometers is returned.
